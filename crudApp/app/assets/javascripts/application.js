@@ -13,3 +13,14 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+$(document).ready(function(){
+  $('#add').click(function(e){
+    var $likes = $('.material-icons').css('color', 'blue');
+    // $likes = $('<i>').addClass('material-icons').html('thumb_up').css('background-color', 'red');
+
+    // $('.counter').html(1);
+
+
+  });
+
+});

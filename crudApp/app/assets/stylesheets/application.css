@@ -13,3 +13,55 @@
  *= require_tree .
  *= require_self
  */
+ body{
+   background-color: bisque;
+   font-family: 'Indie Flower', cursive;
+ }
+.navigation{
+  position: absolute;
+  left: 37%;
+  top: 10%;
+  /*color: white; */
+}
+#new-entry{
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  /*padding: 10px; */
+}
+#results{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+.paragraph{
+  /*background-color: lightgrey;*/
+  width: 49%;
+}
+.counter{
+  position: absolute;
+  top: 79%;
+  left: 20%;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  color: red;
+}
+
+span{
+  background-color: grey;
+}
+li{
+border: solid white;
+padding: 30px;
+margin: 30px;
+}
+p{
+  border: solid lightgrey;
+}
+#alerts{
+  position: absolute;
+  top: 27%;
+  left: 2%;
+  border: solid white;
+}

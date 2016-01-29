@@ -1,31 +1,53 @@
-<h1>Bonjour#index</h1>
-<p>J'suis dans l'app/views/welcome/index.html.erb</p>
+<div class="navigation">
+  <h1>Music Life</h1>
+  <!-- <p></p> -->
+
+</div>
 
 
 
 <body ng-controller="main">
-
-  <div class="">
-      <form id="" class="" ng-submit="create()">
-          <input type="text" ng-model="newSong.username" value="" placeholder="...nickname">
-          <input type="text" ng-model="newSong.description" value="" placeholder="...what's on your mind?">
-          <button type="submit" name="button">Share</button>
+<div id="alerts" class="row">
+      <form class="col s12" id="newsletter" action="index.html" method="post">
+        <h5>Sign up for email alerts</h5>
+        <input class="col s12" type="text" name="name" value="" placeholder="...email">
+        <button type="submit" name="button">register</button>
       </form>
-  </div>
+</div>
 
+<div class="row">
+      <form id="" class="col s12" ng-submit="create()">
+            <div id="new-entry" class="col s6">
+              <input id="nickname" class="col s5" type="text" ng-model="newSong.username" value="" placeholder="...nickname">
+              <textarea id="entry" type="text" ng-model="newSong.description" value="" placeholder="...what's on your mind?" cols="40"></textarea>
+              <button type="submit" name="button">submit</button>
 
-    <div class="">
+            </div>
+      </form>
+</div>
+
+<div class="row">
+    <div id="results" class="col s12">
+
       <ul>
-        <li ng-repeat="song in songs">
-          <p>
-            User: {{song.username}}<br />
-            {{song.description}}
-          </p>
-          <a href="#" ng-click="destroy(song.id)">Delete</a>
-        </li>
-      </ul>
-    </div>
+        <span>
+            <li class="col s3" ng-repeat="song in songs">
 
+                <h5>User: {{song.username}}</h5>
+                <p class="paragraph">{{song.description}}</p>
+                <!-- <i id="add" class="material-icons">thumb_up</i> -->
+
+              <a href="#" ng-click="destroy(song.id)">Delete</a>
+            </li>
+      </span>
+
+      </ul>
+
+      <!-- <br /> -->
+    </div>
+</div>
+
+<!-- <span></span> -->
 
 
 
