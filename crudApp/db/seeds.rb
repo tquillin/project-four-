@@ -10,3 +10,7 @@ Song.create({
     username: 'Tiff',
     description: 'Hey guys, so I really want to play House of the rising sun. I think it will be fun and there is enough of us to make it our own. See you soon.'
   })
+
+  Email.create({
+      name: 'terrellq@gmail.com'
+    })

@@ -2,4 +2,4 @@
 // All this logic will automatically be available in application.js.
 console.log("songsClient");
 
-var app = angular.module('songsClient', ['mainController', 'songsApiFactory']);
+var app = angular.module('songsClient', ['mainController', 'songsApiFactory', 'emailMainController', 'emailsApiFactory']);

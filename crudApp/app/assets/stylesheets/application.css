@@ -14,25 +14,45 @@
  *= require_self
  */
  body{
-   background-color: bisque;
+   background-repeat: no-repeat;
+   background-color: rgba(255, 255, 255, 1);
    font-family: 'Indie Flower', cursive;
  }
-.navigation{
-  position: absolute;
-  left: 37%;
-  top: 10%;
-  /*color: white; */
-}
+ .navigation{
+   position: absolute;
+   left: 2%;
+   /*top: 4%;*/
+ }
+ #image-one{
+   position: absolute;
+   top: 25%;
+   left: 20%;
+ }
+ #image-two{
+   position: absolute;
+   top: 20%;
+   left: 43.3%;
+ }
+ #image-three{
+   position: absolute;
+   top: 25%;
+   left: 67.5%;
+ }
 #new-entry{
   position: absolute;
+  top: 70%;
   left: 25%;
-  top: 25%;
-  /*padding: 10px; */
+}
+#alerts{
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  border: solid white;
 }
 #results{
   position: absolute;
-  top: 50%;
-  left: 10%;
+  top: 90%;
+  left: 23%;
 }
 .paragraph{
   /*background-color: lightgrey;*/
@@ -47,7 +67,6 @@
   font-size: 20px;
   color: red;
 }
-
 span{
   background-color: grey;
 }
@@ -55,13 +74,14 @@ li{
 border: solid white;
 padding: 30px;
 margin: 30px;
+border: solid grey;
+
 }
-p{
-  border: solid lightgrey;
+#submit:hover{
+  color: green;
+  background-color: bisque;
 }
-#alerts{
-  position: absolute;
-  top: 27%;
-  left: 2%;
-  border: solid white;
+#register:hover{
+  color: red;
+  background-color: black;
 }

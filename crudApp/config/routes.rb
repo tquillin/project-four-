@@ -8,6 +8,17 @@ Rails.application.routes.draw do
     resources :songs
   end
 
+
+
+  namespace :api do
+    resources :emails
+  end
+
+  get '/emails/new' => 'emails#new'
+  post '/emails' => 'emails#create'
+  get '/emails/:id' => 'emails#show'
+
+
   # root 'welcome#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -14,13 +14,31 @@
 //= require jquery_ujs
 //= require_tree .
 $(document).ready(function(){
-  $('#add').click(function(e){
+  $('#like').click(function(e){
     var $likes = $('.material-icons').css('color', 'blue');
-    // $likes = $('<i>').addClass('material-icons').html('thumb_up').css('background-color', 'red');
+  });
+  $('#header').css('color', 'red');
+  $('#header').css('position', 'relative');
+    function bounce(){
+      $('#header').animate({right: '-=5'}, 100);
+      $('#header').animate({left: '+=5'}, 100);
+      $('#header').animate({right: '+=5'}, 100);
+      $('#header').animate({left: '-=5'}, 100);
+    }
+    setInterval(bounce, 1500);
 
-    // $('.counter').html(1);
 
+  $('#register').click(function(){
+    $('#address').val('');
+    alert('Awesome, you\'re registered. Please enjoy Music Life responsibly.');
+  });
 
+  $('#submit').click(function(){
+    function clear(){
+      $('#nickname').val('');
+      $('#entry').val('');
+    }
+    clear();
   });
 
 });
