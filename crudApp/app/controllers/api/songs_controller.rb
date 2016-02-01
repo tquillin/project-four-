@@ -20,8 +20,12 @@ class Api::SongsController < ApplicationController
   end
 
   def destroy
+
       Song.delete(params[:id])
-      redirect_to root_path 
+      dbSongs = Song.all
+      render json: {songs: dbSongs}
+      # puts root_path
+      # redirect_to "/api/songs"
   end
 
   private
