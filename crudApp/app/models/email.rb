@@ -28,7 +28,7 @@ class Email < ActiveRecord::Base
 
   def destroy
       Email.delete(params[:id])
-      redirect_to "http://localhost:3000"
+      redirect_to root_path
   end
 
   private

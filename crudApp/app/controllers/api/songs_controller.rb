@@ -21,7 +21,7 @@ class Api::SongsController < ApplicationController
 
   def destroy
       Song.delete(params[:id])
-      redirect_to "http://localhost:3000"
+      redirect_to root_path 
   end
 
   private

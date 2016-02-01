@@ -9,7 +9,7 @@ class WelcomeController < ApplicationController
 
   def destroy
       Song.delete(params[:id])
-      redirect_to songs_path
+      redirect_to root_path
   end
 
   private
