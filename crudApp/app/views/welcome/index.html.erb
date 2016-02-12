@@ -49,7 +49,7 @@
 
                 <h5>{{song.username}} thinks</h5>
                 <p class="paragraph">{{song.description}}</p>
-                <i id="like" class="material-icons">thumb_up</i>
+                <i id="like" class="material-icons" ng-class="song.liked">thumb_up</i>
 
               <a href="#" ng-click="destroy(song.id)">Delete</a>
             </li>
